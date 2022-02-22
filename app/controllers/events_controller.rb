@@ -6,6 +6,7 @@ class EventsController < ApplicationController
 
     def create
         event = Event.create(event_params)
+        #binding.pry
         render json: event
     end
 
