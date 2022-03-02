@@ -4,4 +4,5 @@ class EventSerializer < ActiveModel::Serializer
   def comedian_name
     object.comedian&.name #& if comedian has name it will fetch it and ignore if not
   end
+  
 end
